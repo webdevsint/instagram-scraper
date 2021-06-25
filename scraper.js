@@ -46,12 +46,12 @@ require("dotenv").config();
 
   // Gets links of all the image sources in the the link.
   // First link is the link of the requested post.
-//   const imgs = await page.$$eval("img.FFVAD[src]", (imgs) =>
-//     imgs.map((img) => img.getAttribute("src"))
-//   );
+  const imgs = await page.$$eval("img.FFVAD[src]", (imgs) =>
+    imgs.map((img) => img.getAttribute("src"))
+  );
 
   // Remove the item selector to fetch links of post previews in the page
-//   console.log("Source: " + imgs[0]);
+  console.log("Source: " + imgs[0]);
 
   // Scraping videos, reels and IGTV videos
   const videos = await page.$$eval("video.tWeCl[src]", (videos) =>
