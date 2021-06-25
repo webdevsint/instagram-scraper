@@ -14,7 +14,7 @@ require("dotenv").config();
   await page.goto("https://www.instagram.com/accounts/login/");
 
   console.log("Logging in to instgram.");
-  // You could this error if login credentials are incorrect
+  // You could get this error if login credentials are incorrect
   // TimeoutError: Navigation timeout of 30000 ms exceeded
 
   // Logs in to instgram.
